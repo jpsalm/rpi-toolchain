@@ -25,4 +25,5 @@ RUN mkdir -p /home/$USER/rpi-toolchain
 WORKDIR /home/$USER/rpi-toolchain
 COPY --chown=toolchain:toolchain . .
 RUN make
+CMD bash
 
